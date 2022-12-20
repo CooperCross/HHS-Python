@@ -1,0 +1,165 @@
+# PixelArtProgram.py
+# Cooper Cross
+# 2019
+
+import turtle
+
+xcoor = -400
+ycoor = 400
+
+joe = turtle.Turtle()
+
+joe.hideturtle()
+turtle.tracer(0)
+
+joe.penup()
+joe.goto(xcoor,ycoor)
+joe.pendown()
+
+def drawPixel(t,c,x,y):
+    t.pu()
+    t.goto(x,y)
+    t.fillcolor(c)
+    t.pd()
+    t.begin_fill()
+    for i in range(4):
+        t.fd(20)
+        t.right(90)
+    t.end_fill()
+
+x = -400
+y = 400
+
+def drawGrid():
+    x = -400
+    y = 400
+    for i in range(40):
+        x = -400
+        for i in range(40):
+            drawPixel(joe,"white",x,y)
+            x = x + 20
+        y = y - 20
+        joe.pu()
+        joe.goto(-400,y)
+        joe.pd()
+
+drawGrid()
+
+drawPixel(joe,"firebrick2",0,0)
+drawPixel(joe,"firebrick2",0,20)
+drawPixel(joe,"firebrick2",0,40)
+drawPixel(joe,"firebrick2",0,60)
+drawPixel(joe,"firebrick2",0,-20)
+drawPixel(joe,"firebrick2",0,-40)
+drawPixel(joe,"firebrick2",0,-60)
+drawPixel(joe,"firebrick2",20,0)
+drawPixel(joe,"firebrick2",40,0)
+drawPixel(joe,"firebrick2",60,0)
+drawPixel(joe,"firebrick2",-20,0)
+drawPixel(joe,"firebrick2",-40,0)
+drawPixel(joe,"firebrick2",-60,0)
+drawPixel(joe,"firebrick2",-20,20)
+drawPixel(joe,"firebrick2",-40,20)
+drawPixel(joe,"firebrick2",-20,40)
+drawPixel(joe,"firebrick2",20,80)
+drawPixel(joe,"firebrick2",-80,-20)
+drawPixel(joe,"firebrick2",-100,-40)
+drawPixel(joe,"firebrick2",-80,-40)
+drawPixel(joe,"firebrick2",-60,-20)
+drawPixel(joe,"firebrick2",-60,-60)
+drawPixel(joe,"firebrick2",-40,-60)
+drawPixel(joe,"firebrick2",-20,-60)
+drawPixel(joe,"firebrick2",0,-60)
+drawPixel(joe,"firebrick2",20,-40)
+drawPixel(joe,"firebrick2",40,-40)
+drawPixel(joe,"firebrick2",40,-20)
+drawPixel(joe,"firebrick2",60,20)
+drawPixel(joe,"firebrick2",60,40)
+drawPixel(joe,"firebrick2",60,60)
+drawPixel(joe,"firebrick2",40,80)
+drawPixel(joe,"firebrick2",40,100)
+drawPixel(joe,"firebrick2",20,20)
+drawPixel(joe,"firebrick2",20,40)
+drawPixel(joe,"firebrick2",20,60)
+drawPixel(joe,"firebrick2",40,20)
+drawPixel(joe,"firebrick2",40,40)
+drawPixel(joe,"firebrick2",40,60)
+drawPixel(joe,"firebrick2",20,-20)
+drawPixel(joe,"firebrick2",-20,-20)
+drawPixel(joe,"firebrick2",-40,-40)
+drawPixel(joe,"firebrick2",-40,-20)
+drawPixel(joe,"firebrick2",-60,-40)
+drawPixel(joe,"firebrick2",-20,-40)
+drawPixel(joe,"salmon1",60,100)
+drawPixel(joe,"salmon1",60,80)
+drawPixel(joe,"salmon1",80,80)
+drawPixel(joe,"salmon1",80,60)
+drawPixel(joe,"salmon1",80,40)
+drawPixel(joe,"salmon1",80,20)
+drawPixel(joe,"salmon1",80,00)
+drawPixel(joe,"salmon1",80,-20)
+drawPixel(joe,"salmon1",60,-20)
+drawPixel(joe,"salmon1",60,-40)
+drawPixel(joe,"salmon1",40,-60)
+drawPixel(joe,"salmon1",20,-60)
+drawPixel(joe,"salmon1",20,-80)
+drawPixel(joe,"salmon1",0,-80)
+drawPixel(joe,"salmon1",-20,-80)
+drawPixel(joe,"salmon1",-40,-80)
+drawPixel(joe,"salmon1",-60,-80)
+drawPixel(joe,"salmon1",-80,-80)
+drawPixel(joe,"salmon1",-80,-60)
+drawPixel(joe,"salmon1",-100,-60)
+drawPixel(joe,"yellowgreen",60,120)
+drawPixel(joe,"yellowgreen",80,100)
+drawPixel(joe,"yellowgreen",100,80)
+drawPixel(joe,"yellowgreen",100,60)
+drawPixel(joe,"yellowgreen",100,40)
+drawPixel(joe,"yellowgreen",100,20)
+drawPixel(joe,"yellowgreen",100,0)
+drawPixel(joe,"yellowgreen",100,-20)
+drawPixel(joe,"yellowgreen",80,-40)
+drawPixel(joe,"yellowgreen",60,-60)
+drawPixel(joe,"yellowgreen",40,-80)
+drawPixel(joe,"yellowgreen",20,-100)
+drawPixel(joe,"yellowgreen",0,-100)
+drawPixel(joe,"yellowgreen",-20,-100)
+drawPixel(joe,"yellowgreen",-40,-100)
+drawPixel(joe,"yellowgreen",-60,-100)
+drawPixel(joe,"yellowgreen",-80,-100)
+drawPixel(joe,"yellowgreen",-100,-80)
+drawPixel(joe,"yellowgreen",-120,-60)
+drawPixel(joe,"medium sea green",80,120)
+drawPixel(joe,"medium sea green",100,100)
+drawPixel(joe,"medium sea green",120,80)
+drawPixel(joe,"medium sea green",120,60)
+drawPixel(joe,"medium sea green",120,40)
+drawPixel(joe,"medium sea green",120,20)
+drawPixel(joe,"medium sea green",120,0)
+drawPixel(joe,"medium sea green",120,-20)
+drawPixel(joe,"medium sea green",100,-40)
+drawPixel(joe,"medium sea green",100,-60)
+drawPixel(joe,"medium sea green",80,-60)
+drawPixel(joe,"medium sea green",80,-80)
+drawPixel(joe,"medium sea green",60,-80)
+drawPixel(joe,"medium sea green",60,-100)
+drawPixel(joe,"medium sea green",40,-100)
+drawPixel(joe,"medium sea green",20,-120)
+drawPixel(joe,"medium sea green",0,-120)
+drawPixel(joe,"medium sea green",-20,-120)
+drawPixel(joe,"medium sea green",-40,-120)
+drawPixel(joe,"medium sea green",-60,-120)
+drawPixel(joe,"medium sea green",-100,-100)
+drawPixel(joe,"medium sea green",-120,-80)
+
+def drawSeed(turt,x,y):
+    turt.pu()
+    turt.goto(x,y)
+    turt.pd()
+    turt.dot(20,"black")
+
+drawSeed(joe,10,10)
+drawSeed(joe,-10,-30)
+drawSeed(joe,-30,-50)
+drawSeed(joe,30,50)
+
